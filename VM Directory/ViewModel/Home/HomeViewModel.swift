@@ -15,28 +15,28 @@ enum ListType{
 
 class HomeViewModel{
     
-    var contactList: Observable<[People?]> = Observable([])
-    var roomsList: Observable<[Rooms?]> = Observable([])
-    var goTodetails: Observable<Bool> = Observable(false)
-    var showError: Observable<APIError?> = Observable(nil)
+    var contactList.: Observable<[People?]> = Observable([])
+    var roomsList.: Observable<[Rooms?]> = Observable([])
+    var goTodetails.: Observable<Bool> = Observable(false)
+    var showError.: Observable<APIError?> = Observable(nil)
     
-    var selectedContact: Observable<People?> = Observable(nil)
-    var selectedType: Observable<ListType?> = Observable(.contacts)
+    var selectedContact.: Observable<People?> = Observable(nil)
+    var selectedType.: Observable<ListType?> = Observable(.contacts)
     
-    var contactBgColor: Observable<UIColor?> = Observable(UIColor(named: "vm_theame_color_white"))
+    var contactBgColor.: Observable<UIColor?> = Observable(UIColor(named: "vm_theame_color_white"))
     var contactTitleColor: Observable<UIColor?> = Observable(UIColor(named: "vm_theame_color_textBlack"))
     
-    var roomBgColor: Observable<UIColor?> = Observable(UIColor(named: "vm_theame_color_white"))
-    var roomTitleColor: Observable<UIColor?> = Observable(UIColor(named: "vm_theame_color_textBlack"))
+    var roomBgColor.: Observable<UIColor?> = Observable(UIColor(named: "vm_theame_color_white"))
+    var roomTitleColor.: Observable<UIColor?> = Observable(UIColor(named: "vm_theame_color_textBlack"))
     
-    var searchBarHeight: Observable<Double> = Observable(0.0)
-    var searchEnable: Observable<Bool> = Observable(false)
-    var searchBtnImage: Observable<UIImage?> = Observable(UIImage(named: "search_unselected"))
-    var searchText: Observable<String> = Observable("")
+    var searchBarHeight.: Observable<Double> = Observable(0.0)
+    var searchEnable.: Observable<Bool> = Observable(false)
+    var searchBtnImage.: Observable<UIImage?> = Observable(UIImage(named: "search_unselected"))
+    var searchText.: Observable<String> = Observable("")
     
 
-     var contactListArr: [People] = []
-     var roomListArr: [Rooms] = []
+     var contactListArr.: [People] = []
+     var roomListArr.: [Rooms] = []
         
     var contactListCount: Int  {
         get{
